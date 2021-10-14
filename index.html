@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="w-50 m-auto">
+            <div class="bai1 form__bg">
+                <h2 class="text-center">Bài 1: Sắp xếp</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="num1">Số thứ nhất:</label>
+                        <input type="number" class="form-control" id="num1">
+                    </div>
+                    <div class="form-group">
+                        <label for="num2">Số thứ hai:</label>
+                        <input type="number" class="form-control" id="num2">
+                    </div>
+                    <div class="form-group">
+                        <label for="num3">Số thứ ba:</label>
+                        <input type="number" class="form-control" id="num3">
+                    </div>
+                    <button type="button" id="btnXep" class="btn btn-info">Sắp Xếp</button>
+                    <p id="txtXep" class="py-3"></p>
+                </form>
+            </div>
+            <div class="bai2 form__bg">
+                <h2 class="text-center">Bài 2: Welcome</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Chọn thành viên</label>
+                        <select class="form-control" id="name">
+                            <option value="Hế nhô!">Chọn thành viên</option>
+                            <option value="Bố">Bố</option>
+                            <option value="Mẹ">Mẹ</option>
+                            <option value="Anh Trai">Anh Trai</option>
+                            <option value="Em Gái">Em Gái</option>
+                        </select>
+                    </div>
+                    <button type="button" id="btnStart" class="btn btn-info">Gửi lời chào</button>
+                    <p id="txtStart" class="py-3"></p>
+                </form>
+            </div>
+            <div class="bai3 form__bg">
+                <h2 class="text-center">Bài 3: Đếm số chẵn lẻ</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="number1">Số thứ nhất:</label>
+                        <input type="number" class="form-control" id="number1">
+                    </div>
+                    <div class="form-group">
+                        <label for="number2">Số thứ hai:</label>
+                        <input type="number" class="form-control" id="number2">
+                    </div>
+                    <div class="form-group">
+                        <label for="number3">Số thứ ba:</label>
+                        <input type="number" class="form-control" id="number3">
+                    </div>
+                    <button type="button" id="btnDem" class="btn btn-info">Kết quả</button>
+                    <p id="txtDem" class="py-3"></p>
+                </form>
+            </div>
+            <div class="bai4 form__bg">
+                <h2 class="text-center">Bài 4: Hình tam giác</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="edge1">Cạnh thứ nhất:</label>
+                        <input type="number" class="form-control" id="edge1">
+                    </div>
+                    <div class="form-group">
+                        <label for="edge2">Cạnh thứ hai:</label>
+                        <input type="number" class="form-control" id="edge2">
+                    </div>
+                    <div class="form-group">
+                        <label for="edge3">Cạnh thứ ba:</label>
+                        <input type="number" class="form-control" id="edge3">
+                    </div>
+                    <!-- <button type="button" id="btnDuDoan" class="btn btn-info">Dự đoán</button>
+                    <p id="txtDuDoan"></p> -->
+                    <input type="button" name="" id="btnCheck" value="Kiểm Tra">
+                    <div class="outputResult container py-3">
+                        <label for="resultTriangle">Kết quả: </label>
+                        <input id="resultTriangle" type="text">
+                    </div>
+                </form>
+            </div>
+            <div class="bai5 form__bg">
+                <h2 class="text-center">Bài 1(Nâng cao): Tính ngày tháng năm</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="days">Nhập ngày:</label>
+                        <input type="number" class="form-control" id="days">
+                    </div>
+                    <div class="form-group">
+                        <label for="months">Nhập tháng:</label>
+                        <input type="number" class="form-control" id="months">
+                    </div>
+                    <div class="form-group">
+                        <label for="years">Nhập năm:</label>
+                        <input type="number" class="form-control" id="years">
+                    </div>
+                    <button type="button" id="btnPrevDay" class="btn btn-info">Ngày hôm qua</button>
+                    <button type="button" id="btnNextDay" class="btn btn-info">Ngày tiếp theo</button>
+                    <p id="txtDay" class="py-3"></p>
+                </form>
+            </div>
+            <div class="bai6 form__bg">
+                <h2 class="text-center">Bài 2(Nâng cao): Tính ngày</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="months2">Nhập tháng:</label>
+                        <input type="number" class="form-control" id="months2">
+                    </div>
+                    <div class="form-group">
+                        <label for="years2">Nhập năm:</label>
+                        <input type="number" class="form-control" id="years2">
+                    </div>
+                    <button type="button" id="btnNgay" class="btn btn-info">Tính ngày</button>
+                    <p id="txtNgay" class="py-3"></p>
+                </form>
+            </div>
+            <div class="bai7 form__bg">
+                <h2 class="text-center">Bài 3(Nâng cao): Đọc số</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="read">Nhập số có 3 chữ số:</label>
+                        <input type="number" class="form-control" id="read">
+                    </div>
+                    <button type="button" id="btnRead" class="btn btn-info">Đọc số</button>
+                    <p id="txtRead" class="py-3"></p>
+                </form>
+            </div>
+            <div class="bai8 form__bg">
+                <h2 class="text-center">Bài 4(Nâng cao): Tìm SV</h2>
+                <form>
+                    <div class="inputEx">
+                        <div class="input1 py-3">
+                            <label for="nameOfStudent1">Sinh Viên 1: </label>
+                            <input id="nameOfStudent1" placeholder="Nhập tên" type="text"><br>
+
+                            <input id="point_x_1" placeholder="Nhập tọa độ x" type="number">
+
+                            <input id="point_y_1" placeholder="Nhập tọa độ y" type="number">
+                        </div>
+                    </div>
+
+                    <div class="inputEx">
+                        <div class="input2 py-3">
+                            <label for="nameOfStudent2">Sinh Viên 2: </label>
+                            <input id="nameOfStudent2" placeholder="Nhập tên" type="text"><br>
+
+                            <input id="point_x_2" placeholder="Nhập tọa độ x" type="number">
+
+                            <input id="point_y_2" placeholder="Nhập tọa độ y" type="number">
+                        </div>
+                    </div>
+
+                    <div class="inputEx">
+                        <div class="input3 py-3">
+                            <label for="nameOfStudent3">Sinh Viên 3: </label>
+                            <input id="nameOfStudent3" placeholder="Nhập tên" type="text"><br>
+
+                            <input id="point_x_3" placeholder="Nhập tọa độ x" type="number">
+
+                            <input id="point_y_3" placeholder="Nhập tọa độ y" type="number">
+                        </div>
+                    </div>
+
+                    <div class="inputEx">
+                        <div class="input4 py-3">
+                            <label for="school">Trường học: </label><br>
+                            <input id="point_x_school" placeholder="Nhập tọa độ x" type="number">
+
+                            <input id="point_y_school" placeholder="Nhập tọa độ y" type="number">
+                        </div>
+                    </div>
+
+                    <!-- Output days -->
+                    <div class="outputResult">
+                        <!-- <input  type="button" name="" id="btnEx8" value="Tìm SV"> -->
+                        <!-- <div class="outputResult py-3">
+                            <label for="resultEx8">Kết quả: </label>
+                            <input id="resultEx8" type="text">
+                        </div> -->
+                        <button type="button" id="btnEx8" class="btn btn-info">Tìm SV</button>
+                        <p id="resultEx8" class="py-3"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- BS4  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
